@@ -1,0 +1,53 @@
+.shop-btn {
+  display: flex;
+  align-items: center;
+  border: 2px solid #d40000; /* viền đỏ */
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 92%,
+    95% 100%,
+    0 100%
+  ); /* vát góc dưới phải */
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+  background: transparent;
+}
+
+.shop-btn:hover {
+  background: rgba(212, 0, 0, 0.1); /* hiệu ứng hover nhẹ */
+}
+
+.shop-btn .text {
+  flex: 1;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.shop-btn .icon-box {
+  background: #d40000;
+  padding: 15px 20px;
+  clip-path: polygon(
+    8% 0,
+    100% 0,
+    100% 92%,
+    92% 100%,
+    0 100%,
+    0 8%
+  ); /* vát góc trên trái */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop-btn .icon-box img {
+  width: 24px;
+  height: 24px;
+  filter: invert(1); /* chuyển icon trắng */
+}
